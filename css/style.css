@@ -1,3 +1,22 @@
+:root {\
+    --default-font-size: 0.875rem; /*  14px  */
+    --heading-font-size: 1.5rem;   /*  24px  */
+    --default-line-height: 150%;
+
+    --color-green: #C4F82A;
+    --color-grey-900: #141414;
+    --color-grey-800: #1F1F1F;
+    --color-grey-700: #333333;
+    --color-white: #FFFFFF;
+
+    --spacing-50: 0.25rem;
+    --spacing-100: 0.5rem;
+    --spacing-150: 0.75rem;
+    --spacing-200: 1rem;
+    --spacing-300: 1.5rem;
+    --spacing-500: 2.5rem;
+}
+
 /* Reset */
 *,
 *::before,
@@ -13,5 +32,9 @@ figure, blockquote, dl, dd {
 /* *** */
 
 body {
-    color: red;
+    font-family: "Inter", monospace;
+    font-size: var(--default-font-size);
+    font-weight: bold;
+    color: var(--color-grey-700);
+    background-color: var(--color-green);
  }
