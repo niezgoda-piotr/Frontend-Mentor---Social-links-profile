@@ -1,7 +1,15 @@
-:root {\
-    --default-font-size: 0.875rem; /*  14px  */
-    --heading-font-size: 1.5rem;   /*  24px  */
-    --default-line-height: 150%;
+:root {
+    --text-preset-1-size: 1.5rem;
+    --text-preset-1-weight: 600;
+    --text-preset-1-line-height: 150%;
+
+    --text-preset-2-size: 0.875rem;
+    --text-preset-2-weight: 400;
+    --text-preset-2-line-height: 150%;
+
+    --text-preset-2-bold-size: 0.875rem;
+    --text-preset-2-bold-weight: 700;
+    --text-preset-2-bold-line-height: 150%;
 
     --color-green: #C4F82A;
     --color-grey-900: #141414;
@@ -13,8 +21,8 @@
     --spacing-100: 0.5rem;
     --spacing-150: 0.75rem;
     --spacing-200: 1rem;
-    --spacing-300: 1.5rem;
-    --spacing-500: 2.5rem;
+    --spacing-300: 1.5rem;  /*  24px  */
+    --spacing-500: 2.5rem;  /*  40px  */
 }
 
 /* Reset */
@@ -29,12 +37,67 @@ figure, blockquote, dl, dd {
     margin: 0;
     padding: 0;
 }
+
 /* *** */
 
 body {
     font-family: "Inter", monospace;
-    font-size: var(--default-font-size);
-    font-weight: bold;
-    color: var(--color-grey-700);
-    background-color: var(--color-green);
- }
+    color: var(--color-white);
+    background-color: var(--color-grey-900);
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    padding: var(--spacing-300);
+}
+
+main {
+    max-width: 24rem; /*  384px  */
+    background-color: var(--color-grey-800);
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-radius: 0.75rem;
+    padding: var(--spacing-300);
+}
+
+.profile {
+    display: grid;
+    gap: var(--spacing-300);
+    padding-bottom: var(--spacing-300);
+    text-align: center;
+}
+
+.profile picture {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.profile img {
+    display: block;
+    width: 5.5rem;
+    border-radius: 2.75rem;
+}
+
+.profile__name-and-location h1 {
+    font-size: var(--text-preset-1-size);
+    font-weight: var(--text-preset-1-weight);
+    line-height: var(--text-preset-1-line-height);
+}
+
+.profile__name-and-location address {
+    font-size: var(--text-preset-2-bold-size);
+    font-weight: var(--text-preset-2-bold-weight);
+    line-height: var(--text-preset-2-bold-line-height);
+    font-style: normal;
+    color: var(--color-green);
+}
+
+.profile__role {
+    font-size: var(--text-preset-2-size);
+    font-weight: var(--text-preset-2-weight);
+    line-height: var(--text-preset-2-line-height);
+}
