@@ -58,6 +58,7 @@ body {
 }
 
 main {
+    width: 100%;
     max-width: 24rem; /*  384px  */
     background-color: var(--color-grey-800);
 
@@ -69,6 +70,7 @@ main {
 }
 
 .profile {
+    width: 100%;
     display: grid;
     gap: var(--spacing-300);
     padding-bottom: var(--spacing-300);
