@@ -17,7 +17,6 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 Another simple project, so nothing special. Honed basic css skills.
 
 ## Author
-
 - Website - [Resume](https://piotrniezgoda.pl/)
 - Frontend Mentor - [@niezgoda-piotr](https://www.frontendmentor.io/profile/niezgoda-piotr)
 
