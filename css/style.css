@@ -138,7 +138,7 @@ main {
 }
 
 .social-links a {
-    height: 45px;
+    height: 2.8125rem; /*  45px  */
     width: 100%;
     background-color: var(--color-grey-700);
     border-radius: var(--spacing-100);
@@ -156,4 +156,10 @@ main {
 .social-links a:active {
     color: var(--color-white);
     background-color: var(--color-grey-900);
+}
+
+@media (min-width: 48rem) {   /*  768x  */
+    main {
+        padding: var(--spacing-500);
+    }
 }
